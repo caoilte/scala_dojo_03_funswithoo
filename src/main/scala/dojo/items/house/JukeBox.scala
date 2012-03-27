@@ -1,5 +1,5 @@
 package dojo.items.house
 
-class JukeBox extends HouseItem{
+class JukeBox(id:Int) extends HouseItem(id) {
 
 }

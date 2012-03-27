@@ -1,12 +1,21 @@
 package dojo
 
+import items.Item
 import org.scalatest.junit.JUnitRunner
 import org.junit.runner.RunWith
+import org.scalatest.FunSuite
+import org.scalatest.matchers.ShouldMatchers
 
 @RunWith(classOf[JUnitRunner])
-class FunsWithOOTests{
+class FunsWithOOTests extends FunSuite with ShouldMatchers {
 
-  // all items should have an id
+  test("all items should have an id"){
+    class TestItem(id:Int) extends Item(id)
+
+    val testItem = new TestItem(5)
+    testItem.id should equal (5)
+
+  }
 
   // all fashion and house items should be able to be bought for cash deducted from user
 

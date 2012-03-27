@@ -1,8 +1,5 @@
 package dojo.items.artifacts
 
-import artifacts.ArtifactItem
-
-
-class MachineGunUnicorn extends ArtifactItem {
+class MachineGunUnicorn(id:Int) extends ArtifactItem(id) {
 
 }
