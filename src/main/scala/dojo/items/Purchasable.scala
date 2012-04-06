@@ -1,5 +1,6 @@
 package dojo.items
 
-trait Purchasable{
+trait Purchasable {
+  def price:Int
 
 }

@@ -1,5 +1,7 @@
 package dojo.items.fashion
 
-class Hat(id:Int) extends FashionItem(id) {
+import dojo.items.Purchasable
 
+class Hat(id:Int) extends FashionItem(id) with Purchasable {
+  def price = 5
 }
