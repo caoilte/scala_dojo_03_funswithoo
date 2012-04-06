@@ -1,9 +1,8 @@
-name := "scala_dojo_03_funswithoo"
+scalaVersion := "2.9.1"
 
-version := "1.0"
+name := "scala-dojo-03"
 
-scalaVersion := "2.9.0"
-
-libraryDependencies += "org.scalatest" %% "scalatest" % "1.7.1" % "test"
-
-libraryDependencies += "junit" % "junit" % "4.8.1" % "test"
+libraryDependencies ++= Seq(
+  "junit" % "junit" % "4.8.1" % "test",
+  "org.scalatest" % "scalatest_2.9.1" % "1.7.1" % "test"
+)
