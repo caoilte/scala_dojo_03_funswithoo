@@ -1,5 +1,8 @@
 package dojo.items.house
 
-class JukeBox(id:Int) extends HouseItem(id) {
+import dojo.items.TimedItem
+
+class JukeBox(id:Int) extends HouseItem(id) with TimedItem {
+  protected def action = "Blah-Blah"
 
 }

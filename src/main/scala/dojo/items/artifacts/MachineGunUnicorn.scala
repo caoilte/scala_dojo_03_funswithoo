@@ -1,5 +1,7 @@
 package dojo.items.artifacts
 
-class MachineGunUnicorn(id:Int) extends ArtifactItem(id) {
+import dojo.items.TimedItem
 
+class MachineGunUnicorn(id:Int) extends ArtifactItem(id) with TimedItem {
+  protected def action = "Bam-Bam"
 }
